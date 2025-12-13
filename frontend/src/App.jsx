@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home.jsx';
 import MainLayout from './layout/MainLayout.jsx';
 import Profile from "./pages/Profile.jsx";
+import CreatePlan from "./pages/CreatePlan.jsx";
+
 
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
-
+          <Route path="/add" element={<CreatePlan />} />
 
           {/* Add more pages here */}
         </Route>
