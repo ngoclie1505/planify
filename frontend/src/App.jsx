@@ -14,6 +14,7 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/add" element={<CreatePlan />} />
+          <Route path="/commu" element={<Profile />} />
 
           {/* Add more pages here */}
         </Route>
